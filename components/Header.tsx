@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import MainHeaderLogo from '../assets/logo.svg'
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { Flex } from '@chakra-ui/react'
 
 export default function Header() {
@@ -14,10 +13,12 @@ export default function Header() {
       justify="space-between"
     >
       <Image
-        src={MainHeaderLogo}
+        src="/logo.svg"
+        width={303}
+        height={60}
         alt="DEVELOPER DAO LOGO - SCHOOL OF CODE"
       />
       <ConnectButton chainStatus="none" showBalance={false} />
     </Flex>
-  );
+  )
 }
